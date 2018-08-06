@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import './App.css';
+import MyComponent from './MyComponent';
 
 class App extends Component {
   render() {
@@ -16,9 +17,7 @@ class App extends Component {
     };
     return (
       <Fragment>
-        <h1>Hello React</h1>
-        <h2>{ condition && 'true' }</h2>
-        <div style={style}></div>
+        <MyComponent/>
       </Fragment>
     );
   }
