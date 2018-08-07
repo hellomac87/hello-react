@@ -17,7 +17,7 @@ class App extends Component {
     };
     return (
       <Fragment>
-        <MyComponent/>
+        <MyComponent name='React' age={3}/>
       </Fragment>
     );
   }
