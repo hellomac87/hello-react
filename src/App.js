@@ -1,12 +1,19 @@
 import React, { Component, Fragment } from 'react';
 import './App.css';
-import EventPractice from './EventPractice';
+import ScrollBox from './ScrollBox';
 
 class App extends Component {
   render() {
     return (
       <Fragment>
-        <EventPractice/>
+        <ScrollBox
+          ref = {(ref) => this.scrollBox = ref }
+        />
+        <button
+          onClick={() => this.scrollBox.scrollToBottom()}
+        >
+          맨 밑으로
+        </button>
       </Fragment>
     );
   }
