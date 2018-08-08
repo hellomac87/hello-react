@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { throws } from 'assert';
 
 class EventPractice extends Component {
     state = {
